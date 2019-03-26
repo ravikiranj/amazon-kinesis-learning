@@ -6,3 +6,10 @@ Each learning module in the series has its own branch (for example, learning-mod
 
 [learning-kinesis]: http://docs.aws.amazon.com/kinesis/latest/dev/learning-kinesis.html
 [kinesis-developer-guide]: http://docs.aws.amazon.com/kinesis/latest/dev/introduction.html
+
+# Setup
+* Install `gradle`
+* Setup AWS Credentials as per https://docs.aws.amazon.com/streams/latest/dev/learning-kinesis-module-one-begin.html
+* Run `./gradlew build`
+* Run `StockTradeWriter` (Producer) class with arguments `StockTradeStream <AWSRegion>`
+* Run `StockTradesProcessor` (Consumer) with arguments `StockTradesProcessor StockTradeStream <AWSRegion>`
